@@ -36,7 +36,7 @@ const Form = () => {
         else setIsValied(false)
         console.log(form);
 
-        axios.post("http://localhost:5000/api/v1/posts/addpost", {
+        axios.post("https://instaclonebackend2.onrender.com/api/v1/posts/addpost", {
             postImage:form.postImage.base64,
             author:form.author,
             location:form.location,

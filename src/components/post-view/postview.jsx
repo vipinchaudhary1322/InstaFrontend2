@@ -12,7 +12,7 @@ const LandingPage = () => {
 
 
     useEffect( () => {
-        axios.get("http://localhost:5000/api/v1/posts").then((res)=>{
+        axios.get("https://instaclonebackend2.onrender.com/api/v1/posts").then((res)=>{
             //console.log(res.data.post);
             setData(res.data.post)
             setlocalData(ldata.user)
